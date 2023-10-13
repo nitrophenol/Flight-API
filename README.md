@@ -23,7 +23,7 @@ Follow these instructions to get the project up and running on your local machin
 To use your RapidAPI key, you need to set it as an environment variable. Create a .env file in the project directory and add the following line:
 
     ```bash
-    RAPIDAPI_KEY=YOUR_RAPIDAPI_KEY
+      KEY=YOUR_RAPIDAPI_KEY
 3. Running the Application
 Start the API by running the following command:
     ```bash
