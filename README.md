@@ -22,6 +22,24 @@ Follow these instructions to get the project up and running on your local machin
 2. Setting Up Environment Variables
 To use your RapidAPI key, you need to set it as an environment variable. Create a .env file in the project directory and add the following line:
 
-    ```RAPIDAPI_KEY=YOUR_RAPIDAPI_KEY
+    ```bash
+    RAPIDAPI_KEY=YOUR_RAPIDAPI_KEY
 3. Running the Application
-Start the API by running the following command:    
+Start the API by running the following command:
+    ```bash
+        npm start
+  
+### Make a POST Request
+  To use the API, you can make a POST request to the following endpoint using a tool like Postman or any other HTTP client:
+  http://localhost:3001/
+  with the request body in this formate
+   ```bash
+         {
+    "date": "2023-10-26T18:30:00.000Z",
+    "destination": "Delhi",
+    "start": "Jaipur"
+         }
+
+
+
+    
