@@ -1,68 +1,27 @@
-Flight Ticket Pricing API
-This is a Node.js application that serves as an API for retrieving flight ticket pricing from various sources and destinations based on a specified date. It interacts with the SkyScanner API to provide this functionality.
+# Flight Ticket Pricing API
 
-Table of Contents
-Prerequisites
-Installation
-Usage
-API Endpoints
-Environment Variables
-License
-Prerequisites
-Before running this application, you need to ensure that you have the following prerequisites:
+The Flight Ticket Pricing API is a Node.js application that allows you to retrieve the pricing of flight tickets from a specified source to a destination on a particular date. It uses the SkyScanner API to provide this functionality.
 
-Node.js: Make sure you have Node.js installed on your machine. You can download it from nodejs.org.
-Installation
-Clone the repository to your local machine using Git:
+## Getting Started
 
-bash
-Copy code
-git clone https://github.com/your-username/flight-ticket-pricing-api.git
-Navigate to the project directory:
+Follow these instructions to get the project up and running on your local machine.
 
-bash
-Copy code
-cd flight-ticket-pricing-api
-Install the required npm packages:
+### Prerequisites
 
-bash
-Copy code
-npm install
-Usage
-To run the API locally, follow these steps:
+- Node.js installed on your machine
+- A RapidAPI key for the SkyScanner API (You can get it from [RapidAPI](https://rapidapi.com/))
 
-Set up environment variables by creating a .env file in the project directory. Add your RapidAPI key like this:
+### Installation
 
-makefile
-Copy code
-RAPIDAPI_KEY=your-rapidapi-key
-Start the server:
+1. Clone the repository to your local machine:
 
-bash
-Copy code
-npm start
-The server will start and listen on http://localhost:3001/.
+   ```bash
+   git clone https://github.com/yourusername/flight-ticket-pricing-api.git
+   cd flight-ticket-pricing-api
+   npm install
+2. Setting Up Environment Variables
+To use your RapidAPI key, you need to set it as an environment variable. Create a .env file in the project directory and add the following line:
 
-To retrieve flight ticket pricing, make a POST request to http://localhost:3001/ with a JSON body in the following format:
-
-json
-Copy code
-{
-    "date": "2023-10-26T18:30:00.000Z",
-    "destination": "delhi",
-    "start": "jaipur"
-}
-Adjust the date, destination, and start city as needed.
-
-API Endpoints
-POST /: This endpoint allows you to retrieve flight ticket pricing information based on the provided input.
-Environment Variables
-RAPIDAPI_KEY: Your RapidAPI key is required to access the SkyScanner API. Make sure to set this key in your environment variables.
-License
-This project is licensed under the MIT License. You can find the license in the LICENSE file included in the project.
-
-Feel free to customize this README to include additional information, such as deployment options, testing, and more.
-
-
-
-
+    ```RAPIDAPI_KEY=YOUR_RAPIDAPI_KEY
+3. Running the Application
+Start the API by running the following command:    
